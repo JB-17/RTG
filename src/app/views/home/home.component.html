@@ -2,10 +2,10 @@
   <p>searchbar</p>
   <h1>Trends</h1>
   <div class="scrolling-wrapper">
-    <app-topic-card *ngFor="let item of items" [item]="item" (routeToTopic)="routeToView()"></app-topic-card>
+    <app-topic-card *ngFor="let item of topics" [item]="item" (routeToTopic)="routeToView()"></app-topic-card>
   </div>
   <div class="discover">
     <h1>Discover</h1>
-    <p>discover-cards</p>
+    <app-subtopic-card *ngFor="let item of subtopics" [item]="item" (routeToSubtopic)="routeToView()"></app-subtopic-card>
   </div>
 </div>

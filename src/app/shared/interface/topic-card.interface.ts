@@ -1,4 +1,4 @@
 export interface TopicCardInterface {
-  title: string,
-  img: string
+  title: string;
+  img: string;
 }

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { TopicCardInterface } from '../../shared/interface/topic-card.interface';
 import { Router } from '@angular/router';
 import { BaseRoutes } from '../../base.routes';
+import { SubtopicCardInterface } from '../../shared/interface/subtopic-card.interface';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +11,7 @@ import { BaseRoutes } from '../../base.routes';
 })
 export class HomeComponent implements OnInit {
 
-  items: TopicCardInterface[] = [
+  topics: TopicCardInterface[] = [
     {
       title: 'social',
       img: 'https://images.unsplash.com/photo-1454923634634-bd1614719a7b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'
@@ -30,6 +31,17 @@ export class HomeComponent implements OnInit {
     {
       title: 'labor',
       img: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'
+    }
+  ];
+
+  subtopics: SubtopicCardInterface[] = [
+    {
+      title: 'title',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+    },
+    {
+      title: 'title',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
     }
   ];
 

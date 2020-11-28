@@ -1,0 +1,20 @@
+.subtopicCard {
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border-radius: 20px;
+  box-shadow: 2px 3px 10px -7px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+
+  h4 {
+    margin: 0;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}

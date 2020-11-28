@@ -23,8 +23,13 @@ export const rootRouterConfig: Routes = [
         path: BaseRoutes.HOME,
         loadChildren: () =>
           import('./views/home/home.module').then((m) => m.HomeModule)
+      },
+      {
+        path: BaseRoutes.TOPIC,
+        loadChildren: () =>
+          import('./views/topic/topic.module').then((m) => m.TopicModule)
       }
     ]
   }
 
-]
+];

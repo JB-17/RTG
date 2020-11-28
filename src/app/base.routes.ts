@@ -1,3 +1,4 @@
 export const BaseRoutes = {
-  HOME: 'home'
-}
+  HOME: 'home',
+  TOPIC: 'topic',
+};

@@ -1,6 +1,6 @@
-<div class="topicCard">
+<div class="topicCard" (click)="route()">
   <div class="overlay">
-    <img [src]="item.img" alt="" (click)="route()" class="cardImg">
+    <img [src]="item.img" alt="" class="cardImg">
     <span>{{item.title | titlecase}}</span>
   </div>
 </div>

@@ -8,14 +8,14 @@ import { TopicCardInterface } from '../../interface/topic-card.interface';
 })
 export class TopicCardComponent implements OnInit {
   @Input() item: TopicCardInterface;
-  @Output() routeToTopic: EventEmitter<null> = new EventEmitter<null>();
+  @Output() routeToTopic: EventEmitter<any> = new EventEmitter<any>();
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  route() {
+  route(): void {
     this.routeToTopic.emit();
   }
 
